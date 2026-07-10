@@ -1,11 +1,24 @@
-list = [10, 23, 45, 22, 12, 56]
+from stat import Statistics
 
-suma = sum(list)
-print(suma)
+list1= [2, 4, 5] # suma
+list2= [3, 2] # tamaño
+list3= [1234, 789763, 245679] # promedio
 
-cantidad = len(list) 
-print(cantidad)
+stat1 = Statistics(list1)
+stat2 = Statistics(list2)
+stat3 = Statistics(list3)
 
-prom = suma / cantidad
-print(prom)
+print(stat1.suma())
+print(stat1.canti())
+print(stat1.prome())
+
+print(stat2.suma())
+print(stat2.canti())
+print(stat2.prome())
+
+print(stat3.suma())
+print(stat3.canti())
+print(stat3.prome())
+
+
 
